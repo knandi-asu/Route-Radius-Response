@@ -1,0 +1,23 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ gmp-map {
+    height: 100%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Main{
+    display: flex;
+    width: 100vw;
+  }
+  .left,.right{
+    flex: 1; /* Allows each child to grow and take equal space */
+    /* Optional styles for better visualization */
+    border: 1px solid black; /* Adds a border to see the divs */
+    box-sizing: border-box;
+  }
